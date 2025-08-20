@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "520551606328",
+    "project_id": "playbaloot-39a9a",
+    "storage_bucket": "playbaloot-39a9a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:520551606328:android:afedaa6e35b79e16ed1ecd",
+        "android_client_info": {
+          "package_name": "com.example.playbaloot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzxqO_zYqo5zNHp445WCxOr6XK-rkXpOE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
