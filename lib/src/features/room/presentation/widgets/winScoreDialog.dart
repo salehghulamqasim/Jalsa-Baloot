@@ -22,6 +22,7 @@ class CompactShinyCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Motion.elevated(
       elevation: 8,
+      shadow: false,
       borderRadius: BorderRadius.circular(8),
       child: Container(
         width: width,
@@ -133,6 +134,8 @@ class VictoryCardCelebration extends StatelessWidget {
             const SizedBox(width: 8),
             Motion.elevated(
               elevation: 4,
+              shadow: false,
+              borderRadius: BorderRadius.circular(8),
               child: const Text(
                 'VICTORY!',
                 style: TextStyle(
@@ -268,31 +271,27 @@ class AppleStyleButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Motion.elevated(
-      elevation: 2,
-      borderRadius: BorderRadius.circular(12),
-      child: Container(
-        width: double.infinity,
-        height: 50,
-        decoration: BoxDecoration(
-          color: const Color(0xFF007AFF),
-          borderRadius: BorderRadius.circular(12),
-        ),
-        child: TextButton(
-          onPressed: onPressed,
-          style: TextButton.styleFrom(
-            backgroundColor: Colors.transparent,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(12),
-            ),
+    return Container(
+      width: double.infinity,
+      height: 50,
+      decoration: BoxDecoration(
+        color: const Color(0xFF007AFF),
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: TextButton(
+        onPressed: onPressed,
+        style: TextButton.styleFrom(
+          backgroundColor: Colors.transparent,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
           ),
-          child: Text(
-            label,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 17,
-              fontWeight: FontWeight.w600,
-            ),
+        ),
+        child: Text(
+          label,
+          style: const TextStyle(
+            color: Colors.white,
+            fontSize: 17,
+            fontWeight: FontWeight.w600,
           ),
         ),
       ),
